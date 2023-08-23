@@ -1,0 +1,148 @@
+/* 
+    STYLE GUIDE:
+
+    Colore blue: #1212b2
+    Colore giallo: #e9f45b
+    Colore azzurro sfondo pagina: #6885e0
+    Colore azzurro : #a1d2ff
+    Colore rosa: #ffaafb
+    Colore sfondo loading e modale: rgba(161, 210, 255, 0.8) 
+*/
+
+/*--------------
+    RESET
+---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------
+    GENERAL
+---------------*/
+html {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #6885e0;
+  color: #1212b2;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+/*--------------
+    HEADER
+---------------*/
+header {
+  background-color: #e9f45b;
+  text-align: center;
+  padding: 32px;
+}
+
+/*--------------
+    CHARACTER
+---------------*/
+.character {
+  height: 112px;
+  width: 112px;
+  background-color: #a1d2ff;
+  border-radius: 100%;
+  border: 2px solid #1212b2;
+  overflow: hidden;
+}
+
+.character img {
+  max-width: 100%;
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 40px 4px;
+}
+
+/*--------------
+    LOADING
+---------------*/
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(161, 210, 255, 0.8);
+  z-index: 999;
+}
+
+.loading img {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------
+    MODAL
+---------------*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(161, 210, 255, 0.8);
+  z-index: 999;
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #1212b2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.modal-close {
+  background-color: #ffaafb;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 2px solid #1212b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
